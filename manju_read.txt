@@ -1,0 +1,22 @@
+# terraform
+Terraform practice For building EC2 is AWS under ELB with Autoscaling
+Download Terraform CLI from https://www.terraform.io/downloads.html
+Extract file terraform_0.12.13_darwin_amd64.zip (Mac)  to any directory (example /Users/mrao/automate/terraform/bin)
+$ cd /Users/mrao/automate/terraform/bin
+$ chmod +x terraform
+#Add following entry in ~/.bash_profile
+PATH=$PATH:/Users/mrao/automate/terraform/bin
+$ source ~/.bash_profile
+$ which terraform
+/Users/mrao/automate/terraform/bin/terraform
+$ terraform --version
+Terraform v0.12.13
+cd /Users/mrao/automate/terraform-test
+$  mkdir aws
+$ git clone https://github.com/MNRAO1975/terraform
+$ cd terraform
+# edit file mykey.pub and enter your public key , use "ssh-keygen" to generate the same
+$ ls
+$ terraform init
+$ terraform plan
+$ terraform apply
